@@ -352,13 +352,7 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: d9d8e9c1a3b9bd14b9ed3e16b01c6fbc, type: 2}
     - target: {fileID: 9500000, guid: 233d700fbff0a468c8d9c7df54cc0901, type: 3}
       propertyPath: m_WarningMessage
-      value: "\nBinding warning: Some generic clip(s) animate transforms that are
-        already bound by a Humanoid avatar. These transforms can only be changed
-        by Humanoid clips.\n\tTransform 'metarig'\n\tTransform 'forearm.R'\n\tTransform
-        'shoulder.R'\n\tTransform 'upper_arm.L'\n\tTransform 'thigh.R'\n\tTransform
-        'spine.006'\n\tTransform 'foot.L'\n\tTransform 'toe.R'\n\tTransform 'shin.R'\n\tTransform
-        'spine.003'\n\tand more ...\n\tFrom animation clip 'metarig|Idle'\n\tFrom
-        animation clip 'TALK'"
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 9500000, guid: 233d700fbff0a468c8d9c7df54cc0901, type: 3}
       propertyPath: m_ApplyRootMotion
@@ -623,7 +617,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 7.517e-42, z: 0, w: -4.8017146e-15}
+  m_BoundingSphereOverride: {x: 0, y: 1.4007e-41, z: 0, w: 2867200}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -2057,7 +2051,11 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
-  m_WarningMessage: 
+  m_WarningMessage: "\nBinding warning: Some generic clip(s) animate transforms that
+    are already bound by a Humanoid avatar. These transforms can only be changed
+    by Humanoid clips.\n\tTransform 'Jaw'\n\tTransform 'Jaw'\n\tTransform 'Jaw'\n\tFrom
+    animation clip 'Idle'\n\tFrom animation clip 'Attack01'\n\tFrom animation clip
+    'GetHit'\n\tFrom animation clip 'Die'\n\tFrom animation clip 'Run'"
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
