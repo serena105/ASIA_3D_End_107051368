@@ -12,7 +12,7 @@ public class npc : MonoBehaviour
 
     public enum npcstate
     {
-        FirstDialog, Missioning,finish
+        FirstDialog, Missioning,Finish
     }
 
     public npcstate state = npcstate.FirstDialog;
