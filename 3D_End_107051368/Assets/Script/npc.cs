@@ -16,11 +16,20 @@ public class npc : MonoBehaviour
     }
 
     public npcstate state = npcstate.FirstDialog;
-    private bool playerInArea;
+    public bool playerInArea;
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.name == "Hero")
+        {
+            playerInArea = true;
+            StartCoroutine(Dialog());
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.name == "Hero")
         {
             playerInArea = false;
             StopDialog();

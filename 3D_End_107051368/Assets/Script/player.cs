@@ -3,7 +3,7 @@ using Invector.vCharacterController;
 
 public class player : MonoBehaviour
 {
-    private float hp = 100;
+    public float hp = 100;
     private Animator ani;
     private int atkCount;
     private float timer;
@@ -27,9 +27,9 @@ public class player : MonoBehaviour
         Attack();
     }
 
-    private void OnDrawGizoms()
+    private void OnDrawGizmos()
     {
-        Gizmos.color = Color.red;
+        Gizmos.color = Color.blue;
         Gizmos.DrawRay(atkPoint.position, atkPoint.forward * atkLength);
     }
 
